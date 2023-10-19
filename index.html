@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Michelly Oliveira Portfolio</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <li class="navbar-item">
+        <a href="#about">Sobre</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#work">Formação</a>
+      </li>
+      </li>
+      <li class="navbar-item">
+        <a href="#contact">Contato</a>
+      </li>
+      <li class="navbar-item">
+        <a target="_blank" href="https://github.com/Michelly-Oliveira">Portfolio</a>
+      </li>
+    </nav>
+
+    <section class="about" id="about">
+      <div class="about-container">
+        <h1>Oi, eu me chamo Michelly Oliveira</h1>
+        <p>
+          e trabalho como desenvolvedora de software, especializada em frontend. Minhas tecnologias favoritas são React, React Native e Node; dou preferência a usar TypeScript sempre que possivel; também gosto de desenvolver testes automatizados para minhas aplicações.
+        </p>
+        <p>
+          Como uma curiosidade sobre mim, meus hobbies são jogar videogame, escutar música e fazer crochê.
+        </p>
+
+        <p class="about-icons">
+          <a target="_blank" href="https://github.com/Michelly-Oliveira">
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/michelly-oliveira-04b9391ab"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </p>
+      </div>
+		</section>
+
+    <section class="work" id="work">
+      <div class="work-intro">
+        <h2>Minha Formação</h2>
+        <p>
+          Trabalho como desenvolvedora de software, especializada em frontend. Atualmente, trabalho na empresa canadense Questrade e faço parte do time que cuida do site de hipoteca (mortgage), usando Sitefinity e Angular.
+        </p>
+        <p>
+          Antes disso, trabalhava na empresa Vizir Software Studio, como desenvolvedora mobile, usando React Native.
+        </p>
+        <p>
+          Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Uninter.
+        </p>
+      </div>
+
+      <h3 class="projects">Veja alguns dos meus projetos</h3>
+
+      <div class="work-project">
+        <img src="./assets/github-explorer.jpg" alt="Github Explorer" />
+
+        <div class="work-project-info">
+          <h3 class="work-project-title">Github Explorer</h3>
+          <p class="work-project-platform">Web</p>
+          <p class="work-project-icons">
+            <i class="fa fa-desktop"></i>
+            <i class="fa fa-tablet"></i>
+            <i class="fa fa-mobile"></i>
+          </p>
+
+          <p class="work-project-description">
+            Search for Github repositories and list the issues. Switch between
+						dark and light mode; changes persist between sessions.<br>
+						Made with: React (React Hooks, Styled Components), Github API
+          </p>
+
+          <a class="work-project-btn" target="_blank" href="https://github.com/Michelly-Oliveira/github-explorer">Visit</a>
+        </div>
+      </div>
+
+      <div class="work-project change-order">
+        <img src="./assets/proffy.jpg" alt="Proffy" />
+
+        <div class="work-project-info">
+          <h3 class="work-project-title">Proffy</h3>
+          <p class="work-project-platform">Web/Mobile</p>
+          <p class="work-project-icons">
+            <i class="fa fa-desktop"></i>
+            <i class="fa fa-tablet"></i>
+            <i class="fa fa-mobile"></i>
+          </p>
+
+          <p class="work-project-description">
+						Developed a full-stack application to help students connect with teachers, where teachers can create classes for specific subjects and the students can contact a teacher through whatsapp, and can save the favorite teachers.<br>
+						Made with: Node, React, Expo, SQLite, Knex, REST API
+          </p>
+
+          <a class="work-project-btn" target="_blank" href="https://github.com/Michelly-Oliveira/proffy-nlw2">Visit</a>
+        </div>
+      </div>
+
+      <div class="work-project">
+        <img src="./assets/anime-list.jpg" alt="Anime List" />
+
+        <div class="work-project-info">
+          <h3 class="work-project-title">Anime List</h3>
+          <p class="work-project-platform">Web</p>
+          <p class="work-project-icons">
+            <i class="fa fa-desktop"></i>
+            <i class="fa fa-tablet"></i>
+            <i class="fa fa-mobile"></i>
+          </p>
+
+          <p class="work-project-description">
+            Used the Fetch Api to request data in JSON from the anime API, CSS
+            Grid and Flexbox to display the anime data on the page so the user
+            can browse through the list of animes by gender or popularity, and
+            localStorage to save the favorite animes.
+          </p>
+
+          <a class="work-project-btn" target="_blank" href="https://github.com/Michelly-Oliveira/Anime-List">Visit</a>
+        </div>
+      </div>
+		</section>
+
+    <section class="contact" id="contact">
+      <h2>Entre em contato!</h2>
+
+      <form id="form">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea rows="5" cols="33" name="message" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+		</section>
+		
+		<script src="js/main.js"></script>
+  </body>
+  
+</html>
